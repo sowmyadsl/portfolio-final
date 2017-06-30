@@ -1,0 +1,35 @@
+nav {
+	background-image: linear-gradient(200deg, rgb(74, 174, 179) 10%, rgb(42, 80, 167) 100%);
+}
+
+nav .brand-logo{
+	font-size: 100px;
+	text-decoration: none;
+}
+
+nav a:hover{
+	text-decoration: none;
+
+}
+
+
+#intro {
+	margin-top: -200px;
+	padding: 200px;
+	text-align: center;
+}
+
+.flex-box{
+	padding-top: 10px;
+}
+
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  /*background-color: black;*/
+  text-align: left;
+}
