@@ -3,88 +3,90 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link href="css/hamburgers.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"   integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-  <script src="js/jquery.sticky.js"type="text/javascript"></script>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js" type="text/javascript"></script>
 
   <title>Portfolio</title>
 </head>
 <body>
-  <!-- navbar -->
-  <nav>
-    <div class="nav-wrapper">
-      <p class="brand-logo" class="active">SD</p>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#projects">PROJECTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
+  <!-- hamburger menu -->
+  <div class="header">
+    <button class="hamburger hamburger--slider" type="button" id="toggle">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <!-- nav-bar -->
+    <div class="overlay-navbar" id="overlay-navbar">
+      <nav class="overlay-menu">
+        <ul>
+          <li ><a class="scroll-link" data-id="home">Home</a></li>
+          <li><a class="scroll-link" data-id="about">About</a></li>
+          <li><a class="scroll-link" data-id="projects">Projects</a></li>
+          <li><a class="scroll-link" data-id="contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </div>
 
+<!-- hero section -->
+  <div id="home" class="hero-image">
+    <div class="hero-text">
+      <h1>Welcome!</h1>
+      <h2>I am Sowmya, a web-developer</h2>
+      <button>Hire me</button>
+    </div>
+  </div>
+
+
+<!-- about section -->
+<div class="container" id="about">
+  <p class="about-header">About</p>
   <div class="row">
-    <div id="intro">
-      <div class="flex-box">
-        <span class="black-text">
-          <div class="titles">
-            <h2>Sowmya Dinavahi</h2>
-            </div>
-          </span>
-        </div>
+    <div class="col-md-3">
+      <div class="circular--landscape">
+        <img src="img/sowmya1.png">
       </div>
     </div>
-
-    <div class="row">
-      <div class="col s12 m5">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/vacation.png">
-
-          </div>
-          <div class="card-content">
-            <span class="card-title">Animal Tracker </span>
-            <p>A angular web app to keep track of animals in a local zoo.</p>
-          </div>
-          <div class="card-action">
-            <a href="https://github.com/sowmyadsl/animal-tracker-angular2">Check code!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col s12 m5">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/query.png">
-
-          </div>
-          <div class="card-content">
-            <span class="card-title">Query </span>
-            <p>A ember web app that lets user post questions and answers.</p>
-          </div>
-          <div class="card-action">
-            <a href="https://github.com/sowmyadsl/question-answer-board-emberjs">Check code!</a>
-          </div>
-        </div>
-      </div>
+    <div class="col-md-5" id="technologies">
+      <img class="tech-logo" src="img/ruby.png" alt="">
+      <img class="tech-logo" src="img/rails.png" alt="">
+      <img class="tech-logo" src="img/javascript.png" alt="">
     </div>
+    <div class="col-md-4" id="about-me-text">
+      <p>A Graduate in Information Technology, currently undertaking a Ruby on Rails programme at Epicodus.</p>
+      <p>I have always been interested in the underlying concepts of websites, their design, and funcationality. I have a passion for web design and love to create.</p>
+      <p>I currently reside in portland OR with my beautiful family. My hobbies include reading books, cooking new recipes, food photography and going on hikes.</p>
+      <p>My interests include exploring new gadgets, web designing, learning new programming languages, singing, and socializing with friends.</p>
+    </div>
+  </div>
+</div>
 
 
+  <div id="projects" class="page-section">
+    <div class="container">
+    	<h2>Projects</h2>
+    	<p class="caption">...</p>
+    </div>
+    <!--/.container-->
+  </div>
 
 
-
-
-
-
-
-
-  </body>
-    </html>
+  <div id="contact" class="page-section">
+    <div class="container">
+    	<h2>Contact</h2>
+    	<p class="caption">...</p>
+    </div>
+  </div>
+</body>
+</html>
