@@ -86,10 +86,11 @@ a.scroll-link:hover {
 }
 #about-me-text{
   text-align: justify;
+  font-size: 18px;
 }
 
 .tech-logo {
-  width: 120px;
+  width: 50px;
 }
 .page-section {
   width: 100%;
@@ -104,13 +105,7 @@ a.scroll-link:hover {
 .page-section h1 span {
   font-weight: 200;
 }
-.page-section h2 {
-  font-size: 3em;
-  font-weight: 900;
-  color: #fff;
-  margin: 0 0 30px;
-  text-shadow: 2px 2px 2px #000;
-}
+
 .page-section p {
   font-size: 1.2em;
   font-weight: 200;
