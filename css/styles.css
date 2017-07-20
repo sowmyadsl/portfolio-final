@@ -1,7 +1,7 @@
 /* The hero image */
 .header  {
   /* The image used */
-  background-image: url("/Users/sowmyaudai/projects/portfolio/img/screenshot.JPG");
+  background-image: url("../img/screenshot.JPG");
   position: relative;
   /* Set a specific height */
   height: 100%;
